@@ -31,5 +31,18 @@ public class TestGetPetbyStatus {
 		assertEquals(ExpectedPetName,ActualPetName);
 		
 	}
+	
+	@Test
+	public void test3() {
+		
+		PetMaster PM = new PetMaster();
+		PM.PetData();
+		
+		String ActualPetName = PM.GetPetbyStatus("Pending");
+		System.out.println(ActualPetName);
+		String ExpectedPetName = "Jerry";
+		assertEquals(ExpectedPetName,ActualPetName);
+		
+	}
 
 }
