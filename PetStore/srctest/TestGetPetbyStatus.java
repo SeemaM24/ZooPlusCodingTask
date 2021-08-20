@@ -40,7 +40,7 @@ public class TestGetPetbyStatus {
 		
 		String ActualPetName = PM.GetPetbyStatus("Pending");
 		System.out.println(ActualPetName);
-		String ExpectedPetName = "Jerry";
+		String ExpectedPetName = "Spike";
 		assertEquals(ExpectedPetName,ActualPetName);
 		
 	}
