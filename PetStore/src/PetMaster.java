@@ -42,11 +42,11 @@ public class PetMaster {
 		int x =0;
 		System.out.println(st);
 		for(int i = 0; i< 3; i++){
-			System.out.println("Status in for " +PetStatus[i]);
+			
 			if (PetStatus[i]== st)
 			{
 				x = i;
-				System.out.println("In If " +x);
+		
 			}
 			}
 		return PetNames[x];
@@ -76,15 +76,14 @@ public class PetMaster {
 		PM.PetData();	
 		
 		String PetNameFound;
-		String DelMsg;
 		//The below code calls GetPetbyID Method
 		PetNameFound = GetPetbyID(1);
 		System.out.println(PetNameFound);
-		
 		//The below code calls GetPetbyStatus Method
 		PetNameFound = GetPetbyStatus("Pending");
 		System.out.println(PetNameFound);
 		
+		String DelMsg;
 		//The below code calls DeletePet Method
 		DelMsg = DeletePet(1);
 		System.out.println(DelMsg);

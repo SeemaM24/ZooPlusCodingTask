@@ -4,45 +4,43 @@ import org.junit.jupiter.api.Test;
 import org.junit.*;
 
 public class TestGetPetbyStatus {
-
-
+	
 	@Test
-	public void test1() {
+	public void TestFindPetByStatusVALID() {
 		
 		PetMaster PM = new PetMaster();
 		PM.PetData();
 		
 		String ActualPetName = PM.GetPetbyStatus("Sold");
-		System.out.println(ActualPetName);
 		String ExpectedPetName = "Spike";
 		assertEquals(ExpectedPetName,ActualPetName);
 		
 	}
 	
 	@Test
-	public void test2() {
+	public void TestFindPetByStatusINVALID() {
 		
 		PetMaster PM = new PetMaster();
 		PM.PetData();
 		
-		String ActualPetName = PM.GetPetbyStatus("Available");
+		String ActualPetName = PM.GetPetbyStatus("Open");
 		System.out.println(ActualPetName);
+		
 		String ExpectedPetName = "Tom";
 		assertEquals(ExpectedPetName,ActualPetName);
-		
+		fail("The expected result is not matching the actual result.");
 	}
 	
 	@Test
-	public void test3() {
+	public void TestFindPetByStatusINVALIDinput() {
 		
 		PetMaster PM = new PetMaster();
 		PM.PetData();
 		
-		String ActualPetName = PM.GetPetbyStatus("Pending");
-		System.out.println(ActualPetName);
+		int ActualPetName = PM.GetPetbyStatus(12345);
 		String ExpectedPetName = "Spike";
 		assertEquals(ExpectedPetName,ActualPetName);
-		
+				
 	}
 
 }

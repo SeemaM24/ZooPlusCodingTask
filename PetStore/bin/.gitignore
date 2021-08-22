@@ -1,3 +1,8 @@
 /TestGetPetbyStatus.class
 /TestGetPetbyID.class
 /PetMaster.class
+/TestGetPetbyId.class
+/TestDeletePetById.class
+/AllTests.class
+/TestGetPetByIdValidation.class
+/TestGetPetbyIdStatus.class
