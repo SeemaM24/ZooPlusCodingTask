@@ -8,3 +8,5 @@ Coding Task Challange by Seema
 3. TestGetPetByIdValidation.java, TestGetPetbyIdStatus.java and TestDeletePetById.java are written in JUnit to test the PetMaster.java class.
 
 4. The test classes includes tests which can results for Run, Error and Failures statuses of JUnit.
+
+Kindly note: This project has been developed using Eclipse and repository used as GitHub.
